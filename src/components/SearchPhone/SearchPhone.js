@@ -40,18 +40,19 @@ const SearchPhone = () => {
                         </Button>
                     </InputGroup>
                 </div>
-                <div>
-                    {
-                        phones.map(phone => <AllPhones 
-                            brand={phone.brand} 
-                            image={phone.image} 
-                            name={phone.phone_name} 
-                            key={phone.slug}
-                            ></AllPhones>)
-                    }
-                </div>
+            </div>
+            <div className='row'>
+                {
+                    phones.map(phone => <AllPhones
+                        brand={phone.brand}
+                        image={phone.image}
+                        name={phone.phone_name}
+                        key={phone.slug}
+                    ></AllPhones>)
+                }
             </div>
         </div>
+
 
     );
 

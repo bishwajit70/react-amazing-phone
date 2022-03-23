@@ -11,7 +11,7 @@ const AllPhones = (props) => {
     // console.log(brand)
     return (
 
-        <div>
+        <div className='col-md-3 g-4 rounded'>
             <SinglePhone  
             brand={props.brand} 
             image={props.image} 
